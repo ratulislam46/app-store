@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { FaAppStoreIos } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router';
+import '../Navbar/Navbar.css'
 
 const Navbar = () => {
 
     const links = <>
-        <li> <Link to='/'> Apps </Link> </li>
-        <li> <Link to='/myprofile'> My Profile </Link> </li>
+        <li> <NavLink to='/apps'> Apps </NavLink> </li>
+        <li> <NavLink to='/myprofile'> My Profile </NavLink> </li>
     </>
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-[#f2e9e4] shadow-sm rounded-md">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +25,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <h3 className="font-bold text-sky-400 text-xl flex items-center gap-2"><FaAppStoreIos size={24}></FaAppStoreIos> AppStore</h3>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -33,7 +35,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link className='btn'>Login</Link>
             </div>
         </div>
     );
