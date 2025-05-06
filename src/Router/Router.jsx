@@ -23,7 +23,8 @@ export const router = createBrowserRouter([
             {
                 path: '/appDetails/:id',
                 loader: () => fetch('/appData.json'),
-                Component: AppDetails
+                Component: AppDetails,
+                HydrateFallback: Loading
             },
             {
                 path: '/myprofile',

@@ -16,9 +16,9 @@ const AllApp = ({ app }) => {
                 <div className="card bg-base-100 m-4 border rounded-2xl shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            src={banner}
                             alt="Shoes"
-                            className="rounded-xl" />
+                            className="rounded-xl h-[#200px]" />
                     </figure>
                     <div className="card-body items-center">
                         <h2 className="card-title">{name}</h2>

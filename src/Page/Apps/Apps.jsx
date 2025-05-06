@@ -18,9 +18,9 @@ const Apps = () => {
 
     return (
         <div>
-            {/* <div>
+            <div>
                 <Banner></Banner>
-            </div> */}
+            </div>
             
             <div>
                 <ShowApp title={'Education App'} apps={education}></ShowApp>
@@ -29,9 +29,9 @@ const Apps = () => {
                 <ShowApp title={'Health App'} apps={health}></ShowApp>
             </div>
 
-            {/* <div>
+            <div>
                 <Team></Team>
-            </div> */}
+            </div>
         </div>
     );
 };
