@@ -6,6 +6,8 @@ import Apps from '../Page/Apps/Apps'
 import Error from "../Page/Error/Error";
 import Loading from "../Page/Loading/Loading";
 import AppDetails from '../Page/Apps/AppDetails'
+import Login from "../Page/Login/Login";
+import Register from "../Page/Register/Register";
 
 
 export const router = createBrowserRouter([
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
                 Component: MyProfile
             }
         ]
+    },
+    {
+        path: '/login',
+        Component:Login
+    },
+    {
+        path: '/register',
+        Component: Register
     },
     {
         path: '/*',
