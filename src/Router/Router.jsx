@@ -5,7 +5,6 @@ import MyProfile from '../Page/MyProfile/MyProfile';
 import Apps from '../Page/Apps/Apps'
 import Error from "../Page/Error/Error";
 import Loading from "../Page/Loading/Loading";
-import Home from '../Page/Home/Home'
 
 export const router = createBrowserRouter([
     {
@@ -15,11 +14,7 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 path: '/',
-                Component: Home
-            },
-            {
-                path: '/apps',
-                element: <Apps></Apps>,
+                Component: Apps,
                 loader: () => fetch('/appData.json'),
                 HydrateFallback: Loading
             },

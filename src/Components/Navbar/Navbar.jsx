@@ -6,12 +6,12 @@ import '../Navbar/Navbar.css'
 const Navbar = () => {
 
     const links = <>
-        <li> <NavLink to='/apps'> Apps </NavLink> </li>
-        <li> <NavLink to='/myprofile'> My Profile </NavLink> </li>
+        <li className='mr-2'> <NavLink to='/'> Apps </NavLink> </li>
+        <li className='mr-2'> <NavLink to='/myprofile'> My Profile </NavLink> </li>
     </>
 
     return (
-        <div className="navbar bg-[#f2e9e4] shadow-sm rounded-md">
+        <div className="navbar bg-sky-400 shadow-sm rounded-md">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <h3 className="font-bold text-sky-400 text-xl flex items-center gap-2"><FaAppStoreIos size={24}></FaAppStoreIos> AppStore</h3>
+                <h3 className="font-bold text-white text-xl flex items-center gap-2"><FaAppStoreIos size={24}></FaAppStoreIos> AppStore</h3>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
