@@ -8,21 +8,26 @@ const AppDetails = () => {
     // console.log(id);
 
     const singleApp = data.find(app => app.id == id);
-    console.log(singleApp);
+    // console.log(singleApp);
     const { name, developer, thumbnail, banner, category, downloads, features, rating, reviews, description } = singleApp;
 
+    const handleSubmitReview = (e) =>{
+        e.preventDefault();
+        const review = e.target.review.value;
+        console.log(review);
+    }
 
     return (
         <div className='my-12'>
-            <h1 className='text-7xl'>app details {id}</h1>
+            <h1 className='text-7xl'>App details</h1>
 
             {/* app details  */}
-                <div className="max-w-6xl mx-auto mt-10 bg-white shadow-xl rounded-2xl overflow-hidden">
+                <div className="max-w-6xl mx-auto my-16 bg-white shadow-xl rounded-2xl overflow-hidden">
                     <div className="relative">
                         <img
                             src={banner}
                             alt="App banner"
-                            className="w-full h-64 object-cover"
+                            className="w-full object-cover"
                         />
                         <div className="absolute -bottom-10 left-6">
                             <img
@@ -33,7 +38,12 @@ const AppDetails = () => {
                         </div>
                     </div>
 
-                    <div className="px-6 pt-16 pb-8">
+                    {/* button install and unstall  */}
+            <div className='px-6 pt-12 text-center'>
+                <Link className='btn btn-outline btn-info mt-20 px-16'>Install</Link>
+            </div>
+
+                    <div className="px-6 py-8">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                             <div>
                                 <h1 className="text-3xl font-bold text-gray-800">{name}</h1>
@@ -66,14 +76,9 @@ const AppDetails = () => {
                         </div>
                     </div>
                 </div>
-            
-            {/* button install and unstall  */}
-            <div>
-                <Link className='btn mt-20'>Install</Link>
-            </div>
 
             {/* review section  */}
-            <form className='border border-sky-400 rounded-xl space-y-5 px-6 py-4 my-4 w-full max-w-6xl mx-auto'>
+            <form onSubmit={handleSubmitReview} className='border border-sky-400 rounded-xl space-y-5 px-6 py-4 my-4 w-full max-w-6xl mx-auto'>
                 <h2 className='text-2xl font-semibold'>Your Rating</h2>
                 <div className="rating">
                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
@@ -82,7 +87,7 @@ const AppDetails = () => {
                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
                 </div><br />
-                <textarea type="text" placeholder="Write your own opinion . . ." className="textarea w-full"></textarea>
+                <textarea type="text" name='review' placeholder="Write your own opinion . . ." className="textarea w-full"></textarea>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <button type='submit' className='btn btn-outline btn-success'>Submit Review</button>
             </form>
