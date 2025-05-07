@@ -7,10 +7,6 @@ const AllApp = ({ app }) => {
 
     const { name, rating, downloads, banner, id } = app;
 
-    const handleAppDetails = () => {
-        console.log('clicked apps');
-    }
-
     return (
         <div>
 

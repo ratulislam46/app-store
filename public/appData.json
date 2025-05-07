@@ -7,17 +7,17 @@
       "banner": "https://i.postimg.cc/mrd0fDHw/book-education-logo-design-template-132230-505.jpg",
       "downloads": 35000,
       "category": "Education",
-      "rating": 4.8,
+      "rating": 4.6,
       "description": "Programming Hero is a fun and interactive way to learn programming.",
       "features": ["Interactive coding lessons", "Real-world projects", "Gamified learning experience"],
       "reviews": [{"user": "coder_nadia", "rating": 5, "comment": "Best app for beginners!"}]
     },
     {
       "id": "app002",
-      "name": "Learn School",
+      "name": "Online Study",
       "developer": "Learn School for kids",
-      "thumbnail": "https://i.postimg.cc/L5gDW4tn/school-logo-template-23-2149713033.jpg",
-      "banner": "https://i.postimg.cc/L5gDW4tn/school-logo-template-23-2149713033.jpg",
+      "thumbnail": "https://i.postimg.cc/6p2sDPdZ/online-study-logo-design-with-pc-hat-vector-809852-720.jpg",
+      "banner": "https://i.postimg.cc/6p2sDPdZ/online-study-logo-design-with-pc-hat-vector-809852-720.jpg",
       "downloads": 100000,
       "category": "Education",
       "rating": 4.7,
@@ -60,7 +60,7 @@
       "banner": "https://i.postimg.cc/QMXJgJV4/07-Hk5r-Quf-G9ik-Tv-Auv-FUEBe.jpg",
       "downloads": 120000,
       "category": "Productivity",
-      "rating": 4.7,
+      "rating": 4.6,
       "description": "All-in-one workspace for notes, tasks, and collaboration.",
       "features": ["Custom templates", "Team collaboration", "Database creation"],
       "reviews": [{"user": "taskmaster", "rating": 5, "comment": "Perfect for project organization!"}]
@@ -113,7 +113,7 @@
       "banner": "https://i.postimg.cc/hjW3qdGV/Brand-Assets-Logos-02-NSymbol.jpg",
       "downloads": 1000000,
       "category": "Entertainment",
-      "rating": 4.3,
+      "rating": 4.7,
       "description": "Watch unlimited movies and TV shows.",
       "features": ["HD streaming", "Offline downloads", "Personalized recommendations"],
       "reviews": [{"user": "film_fan", "rating": 5, "comment": "Best for binge watching!"}]
@@ -166,7 +166,7 @@
       "banner": "https://i.postimg.cc/28SYtPMr/hospital-logo-template-23-2150529291.jpg",
       "downloads": 800000,
       "category": "Health",
-      "rating": 4.6,
+      "rating": 4.8,
       "description": "Track your calories and reach fitness goals.",
       "features": ["Food diary", "Calorie counter", "Exercise log"],
       "reviews": [{"user": "fit_guru", "rating": 5, "comment": "Great for health tracking."}]
@@ -179,7 +179,7 @@
       "banner": "https://i.postimg.cc/k4qzbSdq/health-care-logo-free-vector.jpg",
       "downloads": 600000,
       "category": "Health",
-      "rating": 4.7,
+      "rating": 4.8,
       "description": "Guided meditations and mindfulness exercises.",
       "features": ["Sleep aid", "Daily meditations", "Stress relief tools"],
       "reviews": [{"user": "zen_moni", "rating": 4.9, "comment": "Very calming and useful."}]

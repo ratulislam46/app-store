@@ -3,6 +3,7 @@ import { FaAppStoreIos } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
 import '../Navbar/Navbar.css'
 import { AuthContext } from '../../Auth/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
 
@@ -17,7 +18,7 @@ const Navbar = () => {
     const handleLogout = ()=> {
         logOut() 
         .then(() => {
-            alert('Sign-out successful')
+            toast.success('Sign-out successful')
           }).catch((error) => {
             console.log(error);
           });

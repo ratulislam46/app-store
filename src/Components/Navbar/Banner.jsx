@@ -44,8 +44,8 @@ const Banner = () => {
             </div>
 
             <div className="absolute top-1/3 left-8 md:left-14 lg:left-36 transform -translate-y-1/2 text-white">
-                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-2">All-in-One App Hub</h2><br />
-                <p className="text-gray-300 w-[50%]"> Discover a curated collection of top-rated mobile apps across health, productivity, lifestyle, and more — all in one seamless platform. Whether you're tracking your well-being, managing tasks, or exploring something new, we bring you secure, smart, and user-friendly solutions that fit right into your daily life. Start exploring and find your next favorite app today.</p>
+                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-2 mt-32">All-in-One App Hub</h2><br />
+                <p className="text-gray-300 w-[80%] md:w-[70%] lg:w-[50%]"> Discover a curated collection of top-rated mobile apps across health, productivity, lifestyle, and more — all in one seamless platform. we bring you secure, smart, and user-friendly solutions that fit right into your daily life. Start exploring and find your next favorite app today.</p>
             </div>
         </div>
     );

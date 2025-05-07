@@ -12,8 +12,9 @@ const Apps = () => {
     const education = data.filter(app => app.category === "Education");
     const productivity = data.filter(app => app.category === "Productivity")
     const entertainment = data.filter(app => app.category === "Entertainment")
-    const health = data.filter(app => app.category === "Health")
-
+    const health = data.filter(app => app.category === "Health");
+    const trending = data.sort((a, b) => b.rating - a.rating).slice(0, 4);
+    console.log(trending);
     // console.log(education, productivity, entertainment, health);
 
     return (
@@ -21,8 +22,9 @@ const Apps = () => {
             <div>
                 <Banner></Banner>
             </div>
-            
+
             <div>
+                <ShowApp title={'Trending App'} apps={trending}></ShowApp>
                 <ShowApp title={'Education App'} apps={education}></ShowApp>
                 <ShowApp title={'Productivity App'} apps={productivity}></ShowApp>
                 <ShowApp title={'Entertainment App'} apps={entertainment}></ShowApp>
