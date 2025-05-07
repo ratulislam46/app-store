@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { use } from 'react';
 import { FaAppStoreIos } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
 import '../Navbar/Navbar.css'
+import { AuthContext } from '../../Auth/AuthProvider';
 
 const Navbar = () => {
+
+    const { user, logOut } = use(AuthContext);
 
     const links = <>
         <li className='mr-2'> <NavLink to='/'> Apps </NavLink> </li>
         <li className='mr-2'> <NavLink to='/myprofile'> My Profile </NavLink> </li>
     </>
 
+
+    const handleLogout = ()=> {
+        logOut() 
+        .then(() => {
+            alert('Sign-out successful')
+          }).catch((error) => {
+            console.log(error);
+          });
+    }
+
     return (
-        <div className="navbar bg-sky-400 shadow-sm rounded-md">
+        <div className="navbar bg-sky-400 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +48,19 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='/login' className='btn'>Login</Link>
+                <div>
+                    {
+                        user ?
+                            <h3 className='text-white font-semibold mr-4 text-xl'>{user.email}</h3>
+                            : " "
+                    }
+                </div>
+                {
+                    user ?
+                        <button onClick={handleLogout} className='btn'>Logout</button> :
+                        <Link to='/login' className='btn'>Login</Link>
+                }
+
             </div>
         </div>
     );
