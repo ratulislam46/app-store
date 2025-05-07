@@ -14,7 +14,7 @@ const Apps = () => {
     const entertainment = data.filter(app => app.category === "Entertainment")
     const health = data.filter(app => app.category === "Health");
     const trending = data.sort((a, b) => b.rating - a.rating).slice(0, 4);
-    console.log(trending);
+    // console.log(trending);
     // console.log(education, productivity, entertainment, health);
 
     return (

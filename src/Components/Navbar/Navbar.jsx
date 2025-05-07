@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router';
 import '../Navbar/Navbar.css'
 import { AuthContext } from '../../Auth/AuthProvider';
 import toast from 'react-hot-toast';
+import { img } from 'framer-motion/client';
 
 const Navbar = () => {
 
@@ -15,13 +16,13 @@ const Navbar = () => {
     </>
 
 
-    const handleLogout = ()=> {
-        logOut() 
-        .then(() => {
-            toast.success('Sign-out successful')
-          }).catch((error) => {
-            console.log(error);
-          });
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                toast.success('Sign-out successful')
+            }).catch((error) => {
+                console.log(error);
+            });
     }
 
     return (
@@ -51,8 +52,9 @@ const Navbar = () => {
             <div className="navbar-end">
                 <div>
                     {
-                        user ?
-                            <h3 className='text-white font-semibold mr-4 text-xl'>{user.email}</h3>
+                        user ? user?.photoURL ?
+                            <img src={user.photoURL} className={`h-[40px] rounded-2xl mr-2 hover:${user.email}`}></img> : 
+                            <p className='mr-2 text-white font-semibold text-xl'>{user.email}</p>
                             : " "
                     }
                 </div>

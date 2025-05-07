@@ -7,7 +7,8 @@ const Banner = () => {
             <div className="carousel w-full mt-4">
                 <div id="slide1" className="carousel-item relative w-full h-[350px] md:h-[450px] lg:h-[650px]">
                     <img
-                        src="https://i.postimg.cc/QMfNVhR4/istockphoto-1193278024-612x612.jpg"
+                    src="https://i.postimg.cc/XNzZQc1H/1-3vru5-O1aswmndq-0-OHl-Hhw.jpg"
+                       
                         className="w-full object-cover" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide4" className="btn btn-circle">❮</a>
@@ -25,7 +26,7 @@ const Banner = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full h-[350px] md:h-[450px] lg:h-[650px]">
                     <img
-                        src="https://i.postimg.cc/XNzZQc1H/1-3vru5-O1aswmndq-0-OHl-Hhw.jpg"
+                         src="https://i.postimg.cc/QMfNVhR4/istockphoto-1193278024-612x612.jpg"
                         className="w-full object-cover" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide2" className="btn btn-circle">❮</a>
@@ -45,7 +46,7 @@ const Banner = () => {
 
             <div className="absolute top-1/3 left-8 md:left-14 lg:left-36 transform -translate-y-1/2 text-white">
                 <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-2 mt-32">All-in-One App Hub</h2><br />
-                <p className="text-gray-300 w-[80%] md:w-[70%] lg:w-[50%]"> Discover a curated collection of top-rated mobile apps across health, productivity, lifestyle, and more — all in one seamless platform. we bring you secure, smart, and user-friendly solutions that fit right into your daily life. Start exploring and find your next favorite app today.</p>
+                <p className="text-white  w-[80%] md:w-[70%] lg:w-[50%]"> Discover a curated collection of top-rated mobile apps across health, productivity, lifestyle, and more — all in one seamless platform. we bring you secure, smart, and user-friendly solutions that fit right into your daily life. Start exploring and find your next favorite app today.</p>
             </div>
         </div>
     );
