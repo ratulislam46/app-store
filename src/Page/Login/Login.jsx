@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../../Auth/AuthProvider';
 import Navbar from '../../Components/Navbar/Navbar';
+import toast from 'react-hot-toast';
 
 const Login = () => {
 
@@ -22,7 +23,7 @@ const Login = () => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(error);
-                alert(errorCode, errorMessage)
+                toast.error(errorCode, errorMessage)
             })
     }
 

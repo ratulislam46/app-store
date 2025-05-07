@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../../Auth/AuthProvider';
 import Navbar from '../../Components/Navbar/Navbar';
+import toast from 'react-hot-toast';
 
 const Register = () => {
 
@@ -24,7 +25,7 @@ const Register = () => {
             .then(result => {
                 console.log(result);
                 const data = result.user;
-                alert('user registration successfully');
+                toast.success('user registration successfully');
                 setUser(data)
             })
             .catch(error => {
