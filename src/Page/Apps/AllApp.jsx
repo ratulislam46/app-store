@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FiDownload } from 'react-icons/fi';
 import { Link } from 'react-router';
 
@@ -12,6 +13,11 @@ const AllApp = ({ app }) => {
 
     return (
         <div>
+
+            <Helmet>
+                <title> AppStore | Home</title>
+            </Helmet>
+
             <Link to={`/appDetails/${id}`}>
                 <div className="card bg-base-100 m-4 border rounded-2xl shadow-sm">
                     <figure className="px-10 pt-10">

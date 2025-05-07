@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link, useLoaderData, useParams } from 'react-router';
 
 const AppDetails = () => {
@@ -20,6 +21,11 @@ const AppDetails = () => {
 
     return (
         <div className='my-12'>
+
+            <Helmet>
+                <title>AppStore | {name}</title>
+            </Helmet>
+
             <h1 className='text-5xl text-center font-semibold text-sky-400'>{name} App Details</h1>
 
             {/* app details  */}
