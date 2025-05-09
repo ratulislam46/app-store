@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useLoaderData, useParams } from 'react-router';
+import { AuthContext } from '../../Auth/AuthProvider';
 
 const AppDetails = () => {
 
+    const { user } = use(AuthContext);
     const { id } = useParams();
     const data = useLoaderData();
     // console.log(id);
     const [install, setInstall] = useState(false)
+    const [review, setReview] = useState(' ');
+    console.log(review);
+
 
     const singleApp = data.find(app => app.id == id);
     // console.log(singleApp);
@@ -15,8 +20,12 @@ const AppDetails = () => {
 
     const handleSubmitReview = (e) => {
         e.preventDefault();
-        const review = e.target.review.value;
-        console.log(review);
+        const userReview = e.target.review.value.trim();
+        if (userReview) {
+            setReview(userReview);
+        }
+        e.target.reset();
+
     }
 
     return (
@@ -99,9 +108,18 @@ const AppDetails = () => {
                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
                 </div><br />
                 <textarea type="text" name='review' placeholder="Write your own opinion . . ." className="textarea w-full"></textarea>
-                <p>Lorem ipsum dolor sit amet.</p>
+
                 <button type='submit' className='btn btn-outline btn-success'>Submit Review</button>
             </form>
+
+            {review && (
+                <div className="mt-4 p-4 bg-gray-100 max-w-6xl mx-auto rounded shadow">
+                    
+                    <h3 className='text-2xl font-bold'>{user.email}</h3>
+                    <h3 className='xl'> {name}</h3>
+                    <p>{review}</p>
+                </div>
+            )}
 
         </div>
     );

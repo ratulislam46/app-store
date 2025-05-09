@@ -9,6 +9,7 @@ import AppDetails from '../Page/Apps/AppDetails'
 import Login from "../Page/Login/Login";
 import Register from "../Page/Register/Register";
 import PrivateRoute from "../Auth/PrivateRoute";
+import About from "../Page/About/About";
 
 
 export const router = createBrowserRouter([
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
             {
                 path: '/myprofile',
                 Component: MyProfile
+            },
+            {
+                path: '/about',
+                Component : About
             }
         ]
     },

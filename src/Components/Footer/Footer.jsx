@@ -26,9 +26,9 @@ const Footer = () => {
                 <div>
                     <span className="footer-title">Follow Us</span>
                     <div className='grid grid-cols-3 gap-5'>
-                        <Link><FaFacebook size={24}></FaFacebook></Link>
-                        <Link><FaInstagram size={24}></FaInstagram></Link>
-                        <Link><FaYoutube size={24}></FaYoutube></Link>
+                        <Link to='https://web.facebook.com/mdratul.islam.46' target='_blank'><FaFacebook size={24}></FaFacebook></Link>
+                        <Link to='https://www.instagram.com/arfan_ratul_46/' target='_blank'><FaInstagram size={24}></FaInstagram></Link>
+                        <Link to='#'><FaYoutube size={24}></FaYoutube></Link>
                     </div>
                 </div>
             </div>

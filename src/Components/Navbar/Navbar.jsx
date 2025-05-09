@@ -13,6 +13,7 @@ const Navbar = () => {
     const links = <>
         <li className='mr-2'> <NavLink to='/'> Apps </NavLink> </li>
         <li className='mr-2'> <NavLink to='/myprofile'> My Profile </NavLink> </li>
+        <li className='mr-2'> <NavLink to='/about'> About</NavLink> </li>
     </>
 
 
