@@ -1,12 +1,44 @@
-# React + Vite
+# 📱 App-Store - React App Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App-Store is a simple and modern web platform built with **React** where users can explore apps in multiple categories like Trending, Education, Productivity, and Health. It includes authentication, dynamic routes, and a clean UI using TailwindCSS and DaisyUI.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Live Site Link](https://magenta-kringle-cd7473.netlify.app/#slide1)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+- **React** (v19)
+- **Vite**
+- **React Router** (v7)
+- **Firebase Auth**
+- **TailwindCSS** & **DaisyUI**
+- **Framer Motion**
+- **React Icons**
+- **React Hot Toast** & **Toastify**
+- **React Helmet Async**
+
+---
+
+## 🔑 Features
+
+- 🔐 Firebase Authentication (Login/Logout)
+- 🧭 Routing: App, My Profile, About
+- 📂 4 App Categories: Trending, Education, Productivity, Health
+- 🌙 Responsive UI with dark/light themes (via DaisyUI)
+- 🚀 Animations & Toast Notifications
+- 🧠 Clean code & modular structure
+
+---
+
+## 🖼️ Screenshots
+
+### 🔹 Home Page
+![Home Page](https://i.ibb.co/zVpJv7V5/app-4.png)
+
+### 🔹 App Categories
+![App Categories](https://i.ibb.co/gZd563dL/app-store.png)
+
+

@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router';
 import '../Navbar/Navbar.css'
 import { AuthContext } from '../../Auth/AuthProvider';
 import toast from 'react-hot-toast';
-import { img } from 'framer-motion/client';
 
 const Navbar = () => {
 
